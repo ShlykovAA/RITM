@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import styles from './Header.module.scss';
 import cn from 'classnames';
 import imgLang from '/lang.png';
