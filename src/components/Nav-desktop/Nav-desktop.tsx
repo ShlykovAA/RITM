@@ -46,6 +46,7 @@ export const NavDesktop = () => {
         <span className={styles.link}>Компанії та проєкти</span>
           { statusObject.project ? (
             <div className={styles.second_nav} onMouseLeave={onProjectMouseLeave}>
+              <div className={styles.opac}></div>
               <SubMenu map={projectLinksMap} />
             </div>
           ) : null}
@@ -54,6 +55,7 @@ export const NavDesktop = () => {
         <span className={styles.link}>Команда</span>
           { statusObject.team ? (
             <div className={styles.second_nav} onMouseLeave={onTeamMouseLeave}>
+              <div className={styles.opac}></div>
               <SubMenu map={teamLinksMap} />
             </div>
           ) : null }
@@ -65,6 +67,7 @@ export const NavDesktop = () => {
         <span className={styles.link}>Контакти</span>
           { statusObject.contacts ? (
             <div className={styles.second_nav} onMouseLeave={onContactsMouseLeave}>
+              <div className={styles.opac}></div>
               <SubMenu map={contactsLinksMap} />
             </div>
           ) : null }

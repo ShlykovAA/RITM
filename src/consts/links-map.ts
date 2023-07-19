@@ -19,16 +19,16 @@ export const projectLinksMap: string[][] = [
 export const teamLinksMap: string[][] = [
   ['/ceo','СEO'],
   ['/managers','Менеджери'],
-  ['/contact-center','Контакт-центр'],
+  ['/contact-center','Контакт - центр'],
   ['/marketing-department','Відділ маркетингу'],
-  ['/hr-department','HR-відділ'],
+  ['/hr-department','HR - відділ'],
   ['/administration','Адміністрація'],
 ];
 
 export const contactsLinksMap: string[][] = [
   ['/kyiv','Київ'],
   ['/lviv','Львів'],
-  ['/ivano-frankivsk','Івано-Франківськ'],
+  ['/ivano-frankivsk','Івано - Франківськ'],
   ['/ternopil','Тернопіль'],
   ['/chernivtsi','Чернівці'],
 ];

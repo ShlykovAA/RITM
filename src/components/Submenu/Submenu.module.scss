@@ -3,6 +3,7 @@
   font-size: 4vmin;
   margin: 0.6vh 5px;
   text-decoration: none;
+  opacity: none;
 }
 
 .link_inside:hover {
@@ -11,7 +12,7 @@
 
 @media (min-width: 1200px) {
   .link_inside {
-    font-size: 1.2vw;
+    font-size: 0.8vw;
     margin: 0.5vh 0;
   }
 }

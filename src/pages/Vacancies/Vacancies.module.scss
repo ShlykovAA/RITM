@@ -1,0 +1,50 @@
+.welcome {
+  display: flex;
+  width: 95vw;
+  padding: 0 2.5vw;
+  margin-top: 50px;
+}
+
+.welcome_left {
+  width: 60%;
+}
+
+.welcome_title {
+  display: flex;
+  font-size: 1.6vw;
+}
+
+.welcome_h1 {
+  margin-bottom: 10px;
+}
+
+.orange {
+  color: #F04A2A;
+}
+
+.welcome_p {
+  margin-top: 10px;
+  font-size: 1.5vw;
+}
+
+.welcome_right {
+  width: 40%;
+  height: 500px;
+  // background-color: #F04A2A;
+}
+
+.btn_open_vac {
+  background-color: #F04A2A;
+  border: 0;
+  border-radius: 5px;
+  width: 240px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.link_open_vac {
+  text-decoration: none;
+}
