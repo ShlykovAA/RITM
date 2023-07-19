@@ -1,124 +1,121 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.scss';
 import cn from 'classnames';
+import { useState } from 'react';
 
 interface INav {
   isOpen: boolean;
-}
+};
 
-interface ILinkMap {
-  '/': string;
-  '/about-us': string;
-  '/companies-and-projects': string;
-  '/team': string;
-  '/vacancies': string;
-  '/contacts': string;
-}
+// const linksMap: string[][] = [
+//   ['/','Головна'],
+//   ['/about-us','Про нас'],
+//   ['/companies-and-projects','Компанії та проєкти'],
+//   ['/team','Команда'],
+//   ['/vacancies','Вакансії'],
+//   ['/contacts','Контакти'],
+// ];
 
-const linkMap: ILinkMap = {
-  '/': 'Головна',
-  '/about-us': 'Про нас',
-  '/companies-and-projects': 'Компанії та проєкти',
-  '/team': 'Команда',
-  '/vacancies': 'Вакансії',
-  '/contacts': 'Контакти',
+const projectLinksMap: string[][] = [
+  ['/residential-real-estate', 'Житлова нерухомість'],
+  ['/commercial-real-estate','Комерційна нерухомість'],
+  ['/investment-in-carpathians','Інвестиційна нерухомість у Карпатах'],
+  ['/real-estate-abroad','Нерухомість за кордоном'],
+  ['/teaching','Навчання'],
+  ['/it-platform-for-the-sale','IT-платформа з продажу новобудов'],
+];
+
+const teamLinksMap: string[][] = [
+  ['/ceo','СEO'],
+  ['/managers','Менеджери'],
+  ['/contact-center','Контакт-центр'],
+  ['/marketing-department','Відділ маркетингу'],
+  ['/hr-department','HR-відділ'],
+  ['/administration','Адміністрація'],
+];
+
+const contactsLinksMap: string[][] = [
+  ['/kyiv','Київ'],
+  ['/lviv','Львів'],
+  ['/ivano-frankivsk','Івано-Франківськ'],
+  ['/ternopil','Тернопіль'],
+  ['/chernivtsi','Чернівці'],
+];
+
+interface IStatusObject {
+  project: boolean;
+  team: boolean;
+  contacts: boolean;
 }
 
 export const Nav: React.FC<INav> = ({ isOpen }) => {
-  const arrLinkMap = Object.entries(linkMap);
+  const [statusObject, setStatusObject] = useState<IStatusObject>({
+    project: false,
+    team: false,
+    contacts: false,
+  });
+  const onProject = () => {
+    setStatusObject((prevStatus) => {return {...prevStatus, project: !statusObject.project}})
+  };
+  const onTeam = () => {
+    setStatusObject((prevStatus) => {return {...prevStatus, team: !statusObject.team}})
+  };
+  const onContacts = () => {
+    setStatusObject((prevStatus) => {return {...prevStatus, contacts: !statusObject.contacts}})
+  }
   return (
     <nav className={cn(styles.nav, {[styles['nav_off']]: !isOpen})}>
-      {/* <ul className={styles.ul_nav}> */}
-          { arrLinkMap.map((item, index) => {
-            return (
-              <>
-                <NavLink to={item[0]} className={styles.link} key={index}>{item[1]}</NavLink>
-                <span className={styles.line}></span>
-              </>
-            )
-          })}
-        {/* <li className={styles.li_first}>
-          <NavLink to="/" className={styles.link}>Головна</NavLink>
-          <span className={styles.line}></span>
-        </li>
-        <li className={styles.li_first}>
-          <NavLink to="/about-us" className={styles.link}>Про нас</NavLink>
-          <span className={styles.line}></span>
-        </li>
-        <li className={styles.li_first}>
-          <NavLink to="/companies-and-projects" className={styles.link}>Компанії та проєкти</NavLink>
-          <ul className={styles.ul_second_lvl}>
-            <li className={styles.li_second}>
-              <NavLink to="/residential-real-estate" className={styles.link_inside}>Житлова нерухомість</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/commercial-real-estate" className={styles.link_inside}>Комерційна нерухомість</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/investment-in-carpathians" className={styles.link_inside}>Інвестиційна нерухомість у Карпатах</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/real-estate-abroad" className={styles.link_inside}>Нерухомість за кордоном</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/teaching" className={styles.link_inside}>Навчання</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/it-platform-for-the-sale" className={styles.link_inside}>IT-платформа з продажу новобудов</NavLink>
-            </li>
-          </ul>
-          <span className={styles.line}></span>
-        </li>
-        <li className={styles.li_first}>
-          <NavLink to="/team" className={styles.link}>Команда</NavLink>
-          <ul className={styles.ul_second_lvl}>
-            <li className={styles.li_second}>
-              <NavLink to="/ceo" className={styles.link_inside}>СEO</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/managers" className={styles.link_inside}>Менеджери</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/contact-center" className={styles.link_inside}>Контакт-центр</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/marketing-department" className={styles.link_inside}>Відділ маркетингу</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/hr-department" className={styles.link_inside}>HR-відділ</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/administration" className={styles.link_inside}>Адміністрація</NavLink>
-            </li>
-          </ul>
-          <span className={styles.line}></span>
-        </li>
-        <li className={styles.li_first}>
-          <NavLink to="/vacancies" className={styles.link}>Вакансії</NavLink>
-          <span className={styles.line}></span>
-        </li>
-        <li className={styles.li_first}>
-          <NavLink to="/contacts" className={styles.link}>Контакти</NavLink>
-          <ul className={styles.ul_second_lvl}>
-            <li className={styles.li_second}>
-              <NavLink to="/kyiv" className={styles.link_inside}>Київ</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/lviv" className={styles.link_inside}>Львів</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/ivano-frankivsk" className={styles.link_inside}>Івано-Франківськ</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/ternopil" className={styles.link_inside}>Тернопіль</NavLink>
-            </li>
-            <li className={styles.li_second}>
-              <NavLink to="/chernivtsi" className={styles.link_inside}>Чернівці</NavLink>
-            </li>
-          </ul>
-          <span className={styles.line}></span>
-        </li> */}
-      {/* </ul> */}
+      <div className={styles.div_for_link}>
+        <NavLink to="/" className={styles.link}>Головна</NavLink>
+      </div>
+        <div className={styles.line}></div>
+      <div className={styles.div_for_link}>
+        <NavLink to="/about-us" className={styles.link}>Про нас</NavLink>
+      </div>
+        <div className={styles.line}></div>
+      <div className={styles.div_for_link}>
+        <NavLink to="/companies-and-projects" className={styles.link} onClick={onProject}>Компанії та проєкти</NavLink>
+        <div className={styles.second_nav}>
+          { statusObject.project ? (
+            projectLinksMap.map((item, index) => {
+              return (
+                <NavLink to={item[0]} className={styles.link_inside} key={index}>{item[1]}</NavLink>
+              )
+            })
+          ) : null}
+        </div>
+      </div>
+        <div className={styles.line}></div>
+      <div className={styles.div_for_link}>
+        <NavLink to="/team" className={styles.link} onClick={onTeam}>Команда</NavLink>
+        <div className={styles.second_nav}>
+          { statusObject.team ? (
+            teamLinksMap.map((item, index) => {
+              return (
+                <NavLink to={item[0]} className={styles.link_inside} key={index}>{item[1]}</NavLink>
+              )
+            })
+          ) : null }
+        </div>
+      </div>
+        <div className={styles.line}></div>
+      <div className={styles.div_for_link}>
+        <NavLink to="/vacancies" className={styles.link}>Вакансії</NavLink>
+      </div>
+        <div className={styles.line}></div>
+      <div className={styles.div_for_link}>
+        <NavLink to="/contacts" className={styles.link} onClick={onContacts}>Контакти</NavLink>
+        <div className={styles.second_nav}>
+          { statusObject.contacts ? (
+            contactsLinksMap.map((item, index) => {
+              return (
+                <NavLink to={item[0]} className={styles.link_inside} key={index}>{item[1]}</NavLink>
+              )
+            })
+          ) : null }
+        </div>
+      </div>
+      <div className={styles.line}></div>
     </nav>
   );
-}
+};
