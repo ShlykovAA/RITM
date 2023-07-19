@@ -91,11 +91,3 @@
 .burger > .brg_icon::after {
 transition-duration: .1s;
 }
-
-@media (min-width: 1000px) {
-
-  .burger {
-    display: none;
-  }
-
-}

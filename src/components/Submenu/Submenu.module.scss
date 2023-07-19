@@ -1,0 +1,17 @@
+.link_inside {
+  color: #F04A2A;
+  font-size: 4vmin;
+  margin: 0.6vh 5px;
+  text-decoration: none;
+}
+
+.link_inside:hover {
+  color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .link_inside {
+    font-size: 1.2vw;
+    margin: 0.5vh 0;
+  }
+}
