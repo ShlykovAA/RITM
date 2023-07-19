@@ -74,7 +74,8 @@ export const Nav: React.FC<INav> = ({ isOpen }) => {
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
-        <NavLink to="/companies-and-projects" className={styles.link} onClick={onProject}>Компанії та проєкти</NavLink>
+        {/* <NavLink to="/companies-and-projects" className={styles.link} onClick={onProject}>Компанії та проєкти</NavLink> */}
+        <span className={styles.link} onClick={onProject}>Компанії та проєкти</span>
         <div className={styles.second_nav}>
           { statusObject.project ? (
             projectLinksMap.map((item, index) => {
@@ -87,7 +88,8 @@ export const Nav: React.FC<INav> = ({ isOpen }) => {
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
-        <NavLink to="/team" className={styles.link} onClick={onTeam}>Команда</NavLink>
+        {/* <NavLink to="/team" className={styles.link} onClick={onTeam}>Команда</NavLink> */}
+        <span className={styles.link} onClick={onTeam}>Команда</span>
         <div className={styles.second_nav}>
           { statusObject.team ? (
             teamLinksMap.map((item, index) => {
@@ -104,7 +106,8 @@ export const Nav: React.FC<INav> = ({ isOpen }) => {
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
-        <NavLink to="/contacts" className={styles.link} onClick={onContacts}>Контакти</NavLink>
+        {/* <NavLink to="/contacts" className={styles.link} onClick={onContacts}>Контакти</NavLink> */}
+        <span className={styles.link} onClick={onContacts}>Контакти</span>
         <div className={styles.second_nav}>
           { statusObject.contacts ? (
             contactsLinksMap.map((item, index) => {
