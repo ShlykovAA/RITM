@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header } from './sections/Header';
 import './App.css';
-// import { Vacancies } from './pages/Vacancies';
+import { Vacancies } from './pages/Vacancies';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Header />
         <main className='main'>
           <Switch>
-            <Route path="/vacancies" component={() => null} />
+            <Route path="/vacancies" component={() => <Vacancies />} />
             <Route path="/" component={() => null} />
             <Route path="*" component={() => null} />
           </Switch>

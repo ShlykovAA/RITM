@@ -3,10 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
-  min-height: 30px;
+  height: 12vh;
+  // min-height: 30px;
   width: 100vw;
   // border-bottom: solid 1px #ffffff;
+  z-index: 100;
+  background-color: #151A21;
 }
 
 .logo {
