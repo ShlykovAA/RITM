@@ -4,6 +4,8 @@ import { projectLinksMap, teamLinksMap, contactsLinksMap } from '../../consts/li
 import cn from 'classnames';
 import styles from './Nav-mobile.module.scss';
 import { SubMenu } from '../Submenu';
+import telegram from '/telegram-240.png';
+import insta from '/instagram-240.png';
 
 interface INavMobile {
   isOpen: boolean;
@@ -65,6 +67,11 @@ export const NavMobile: React.FC<INavMobile> = ({ isOpen }) => {
         </div>
       </div>
       <div className={styles.line}></div>
+      
+      <div className={styles.lang}>
+          <img src={telegram} alt="telegram" className={styles.lang_img}/>
+          <img src={insta} alt="instagram" className={styles.lang_img}/>
+        </div>
     </nav>
   );
 };
