@@ -16,7 +16,8 @@
 }
 
 .advantages_title {
-  font-size: 3.4vw;
+  font-size: 4.8vw;
+  margin-left: 0.5vw;
   font-family: 'Gotham Pro Medium';
 }
 
@@ -98,6 +99,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .advantages_title {
+    font-size: 3.4vw;
   }
 
   .advantages_div_center {

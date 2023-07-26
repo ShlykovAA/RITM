@@ -1,17 +1,23 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Welcome.module.scss';
+import { useMatchMedia } from '../../hooks';
 
 export const Welcome = () => {
+  const { isMobile }:any = useMatchMedia();
   return (
     <section className={styles.welcome}>
       <div className={styles.welcome_left}>
         <div className={styles.welcome_title}>
-          <h1 className={styles.welcome_h1}>МРІЄТЕ <span className={styles.orange}>ПОБУДУВАТИ УСПІШНУ <br/> КАР’ЄРУ </span>У СФЕРІ НЕРУХОМОСТІ?</h1>
+          { isMobile ? (
+            <h1 className={styles.welcome_h1}>МРІЄТЕ <span className={styles.orange}>ПОБУДУВАТИ <br /> УСПІШНУ КАР’ЄРУ</span> <br />У СФЕРІ НЕРУХОМОСТІ?</h1>
+          ) : (
+            <h1 className={styles.welcome_h1}>МРІЄТЕ <span className={styles.orange}>ПОБУДУВАТИ УСПІШНУ <br/> КАР’ЄРУ </span>У СФЕРІ НЕРУХОМОСТІ?</h1>
+          )}
         </div>
         <p className={styles.welcome_p}>
-          Наша компанія RITM ідеальне місце для Вашого розвитку.<br />
-          Приєднуйтесь до команди фахівців і станьте частиною успішної<br />
-          інноваційної компанії. Разом ми зможемо досягти великих<br />
+          Наша компанія RITM ідеальне місце для Вашого розвитку.
+          Приєднуйтесь до команди фахівців і станьте частиною успішної
+          інноваційної компанії. Разом ми зможемо досягти великих
           результатів та реалізувати Ваш потенціал!
         </p>
         <NavLink to="#" className={styles.btn_open_vac}>

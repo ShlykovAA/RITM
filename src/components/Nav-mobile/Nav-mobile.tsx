@@ -6,10 +6,8 @@ import styles from './Nav-mobile.module.scss';
 import { SubMenu } from '../Submenu';
 import telegram from '/telegram-240.png';
 import insta from '/instagram-240.png';
-
-interface INavMobile {
-  isOpen: boolean;
-};
+import { useAppDispatch } from '../../store/hooks';
+import { changeBurgerStatus, useBurgerStatusSelector } from '../../store/slice/burgerStatus';
 
 interface IStatusObject {
   project: boolean;
@@ -17,12 +15,17 @@ interface IStatusObject {
   contacts: boolean;
 }
 
-export const NavMobile: React.FC<INavMobile> = ({ isOpen }) => {
+export const NavMobile: React.FC = () => {
+  const dispatch = useAppDispatch();
+  const burgerIsOpen = useBurgerStatusSelector();
   const [statusObject, setStatusObject] = useState<IStatusObject>({
     project: false,
     team: false,
     contacts: false,
   });
+  const onClick = () => {
+    dispatch(changeBurgerStatus(false))
+  }
   const onProject = () => {
     setStatusObject((prevStatus) => {return {...prevStatus, project: !statusObject.project}})
   };
@@ -33,13 +36,13 @@ export const NavMobile: React.FC<INavMobile> = ({ isOpen }) => {
     setStatusObject((prevStatus) => {return {...prevStatus, contacts: !statusObject.contacts}})
   }
   return (
-    <nav className={cn(styles.nav, {[styles['nav_off']]: !isOpen})}>
+    <nav className={cn(styles.nav, {[styles['nav_off']]: !burgerIsOpen})}>
       <div className={styles.div_for_link}>
-        <NavLink to="/" className={styles.link}>Головна</NavLink>
+        <NavLink to="/" className={styles.link} onClick={onClick}>Головна</NavLink>
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
-        <NavLink to="/about-us" className={styles.link}>Про нас</NavLink>
+        <NavLink to="/about-us" className={styles.link} onClick={onClick}>Про нас</NavLink>
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
@@ -57,7 +60,7 @@ export const NavMobile: React.FC<INavMobile> = ({ isOpen }) => {
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
-        <NavLink to="/vacancies" className={styles.link}>Вакансії</NavLink>
+        <NavLink to="/vacancies" className={styles.link} onClick={onClick}>Вакансії</NavLink>
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
