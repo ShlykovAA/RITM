@@ -3,17 +3,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 12vh;
+  height: 10vh;
   // min-height: 30px;
-  width: 100vw;
+  width: 100%;
+  padding: 0 2vw;
   // border-bottom: solid 1px #ffffff;
   z-index: 100;
   background-color: #151A21;
 }
 
 .logo {
-  // height: 100%;
-  width: 100%;
+  // height: 60%;
+  width: 35vw;
   object-fit: cover;
 }
 
@@ -21,15 +22,23 @@
   display: flex;
   align-items: center;
   height: 100%;
-  width: 40%;
+  width: auto;
+}
+
+.icon_container {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  height: 100%;
+  align-items: center;
 }
 
 .lang {
   display: flex;
   align-items: center;
-  margin: 0 3vw;
+  margin: 0;
   height: 100%;
-  width: 30%;
+  width: 50%;
   cursor: pointer;
 }
 
@@ -61,7 +70,6 @@
   width: 26px;
   height: 26px;
   cursor: pointer;
-  margin-right: 4vw;
   flex-shrink: 0;
 }
 .burger > .brg_icon,
@@ -99,8 +107,12 @@ transition-duration: .1s;
 }
 
 @media (min-width: 768px) {
+  .header {
+    height: 12vh;
+  }
+
   .logo {
-    height: 100%;
+    height: 60%;
     width: auto;
     object-fit: cover;
   }
@@ -112,7 +124,7 @@ transition-duration: .1s;
   }
 
   .lang {
-    margin: 0 3vw;
+    margin: 0;
     height: 40%;
     width: auto;
   }

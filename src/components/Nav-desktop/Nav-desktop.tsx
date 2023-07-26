@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Nav-desktop.module.scss';
 import { NavLink } from 'react-router-dom';
 import { SubMenu } from '../Submenu';
@@ -17,22 +17,22 @@ export const NavDesktop = () => {
     contacts: false,
   });
   const onProjectMouseEnter = () => {
-    setStatusObject({project: true, team: false, contacts: false,})
+    setStatusObject({project: true, team: false, contacts: false,});
   };
   const onProjectMouseLeave = () => {
-    setStatusObject((prevStatus) => {return {...prevStatus, project: false}})
+    setStatusObject((prevStatus) => {return {...prevStatus, project: false}});
   };
   const onTeamMouseEnter = () => {
-    setStatusObject({project: false, team: true, contacts: false,})
+    setStatusObject({project: false, team: true, contacts: false,});
   };
   const onTeamMouseLeave = () => {
-    setStatusObject((prevStatus) => {return {...prevStatus, team: false}})
+    setStatusObject((prevStatus) => {return {...prevStatus, team: false}});
   };
   const onContactsMouseEnter = () => {
-    setStatusObject({project: false, team: false, contacts: true,})
+    setStatusObject({project: false, team: false, contacts: true,});
   }
   const onContactsMouseLeave = () => {
-    setStatusObject((prevStatus) => {return {...prevStatus, contacts: false}})
+    setStatusObject((prevStatus) => {return {...prevStatus, contacts: false}});
   };
   return (
     <nav className={styles.nav}>

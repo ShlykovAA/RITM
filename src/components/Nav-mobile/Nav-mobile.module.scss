@@ -45,12 +45,12 @@
   gap: 1vh;
   position: fixed;
   padding: 2vh 0 2vh 20vw;
-  top: 12vh;
+  top: 10vh;
   right: 0;
-  width: 80vw;
-  height: 84vh;
+  width: 100vw;
+  height: 90vh;
   transition-duration: 1s;
-  overflow: scroll;
+  overflow: auto;
   background-color: #151A21;
 }
 
@@ -74,6 +74,7 @@
 .second_nav {
   display: flex;
   flex-direction: column;
+  padding-top: 5px;
 }
 
 @media (min-width: 600px) {
@@ -86,51 +87,15 @@
     left: 47%; bottom: -10px;
     transition-duration: 0.2s;
   }
-  
 }
 
-// @media (min-width: 1200px) {
-//   .nav {
-//     flex-direction: row;
-//     gap: 0;
-//     position: static;
-//     padding: 0;
-//     width: auto;
-//     height: auto;
-//     top: 0;
-//     margin: 0 1vw;
-//     overflow: visible;
-//   }
+@media (min-width: 768px) {
+  .lang {
+    width: 20%;
+  }
 
-//   .div_for_link {
-//     width: auto;
-//     height: 100%;
-//     position: relative;
-//     margin: 0 1.5vh;
-//     border: red solid 1px;
-//   }
-
-//   .second_nav {
-//     display: flex;
-//     flex-direction: column;
-//     position: absolute;
-//     width: auto;
-//     background-color: #151A21;
-//     top: 5vh;
-//   }
-
-//   .link {
-//     font-size: 1.5vw;
-//     margin: 0;
-//   }
-
-//   .line {
-//     display: none;
-//   }
-// }
-
-// @media (min-width: 1600px) {
-//   .second_nav {
-//     top: 6vh;
-//   }
-// }
+  .nav {
+    top: 12vh;
+    height: 88vh;
+  }
+}

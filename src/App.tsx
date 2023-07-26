@@ -1,21 +1,23 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Header } from './sections/Header';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Vacancies } from './pages/Vacancies';
+import { NotFound } from './pages/NotFound';
+import { Home } from './pages/Home';
+import { Layout } from './components/Layout/Layout';
 
 function App() {
   return (
     <>
-      <Router>
-        <Header />
-        <main className='main'>
-          <Switch>
-            <Route path="/vacancies" component={() => <Vacancies />} />
-            <Route path="/" component={() => null} />
-            <Route path="*" component={() => null} />
-          </Switch>
-        </main>
-      </Router>
+      {/* <Header /> */}
+      {/* <main className='main'> */}
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="vacancies" element={<Vacancies />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      {/* </main> */}
     </>
   )
 }
