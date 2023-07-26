@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from './Nav-desktop.module.scss';
 import { NavLink } from 'react-router-dom';
 import { SubMenu } from '../Submenu';
