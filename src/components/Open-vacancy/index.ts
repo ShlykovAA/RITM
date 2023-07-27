@@ -1,0 +1,1 @@
+export { OpenVacancy } from './Open-vacancy';

@@ -1,4 +1,4 @@
-import { Advantages, Welcome } from '../../sections/vacancies';
+import { Advantages, CurrentVacancies, Welcome } from '../../sections/vacancies';
 
 export const Vacancies = () => {
   return (
@@ -6,6 +6,7 @@ export const Vacancies = () => {
       <div className='bg_orange_01'></div>
       <Welcome />
       <Advantages />
+      <CurrentVacancies />
     </main>
   );
 };  

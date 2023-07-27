@@ -1,0 +1,79 @@
+.vacancy_card {
+  margin: 20px 0;
+}
+
+.phone_box {
+  display: flex;
+  align-items: center;
+  margin-left: 3vw;
+}
+
+.vacancy_phone {
+  height: 12vw;
+}
+
+.phone_box h2{
+  font-family: 'Gotham Pro Medium';
+  font-size: 5.5vw;
+  margin-bottom: 10px;
+}
+
+.point_box {
+  display: flex;
+  align-items: center;
+  margin-left: 7vw;
+  margin-bottom: 10px;
+}
+
+.vacancy_point {
+  // height: 20px;
+  height: 6vw;
+}
+
+.point_box p {
+  font-size: 4vw;
+} 
+
+.line {
+  // margin-top: 10px;
+  width: 70vw;
+  height: 2px;
+  background-color: #F04A2A;
+}
+
+@media (min-width: 768px) {
+
+  .vacancy_phone {
+    height: 8vw;
+  }
+
+  .phone_box h2{
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
+  .vacancy_point {
+    height: 4vw;
+  }
+  
+  .point_box p {
+    font-size: 3vw;
+  } 
+}
+
+@media (min-width: 1200px) {
+  .vacancy_phone {
+    height: 50px;
+  }
+
+  .phone_box h2{
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+  }
+  .vacancy_point {
+    height: 30px;
+  }
+  
+  .point_box p {
+    font-size: 1.8vw;
+  } 
+}
