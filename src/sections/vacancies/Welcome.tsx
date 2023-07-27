@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import styles from './Welcome.module.scss';
 import { useMatchMedia } from '../../hooks';
 
