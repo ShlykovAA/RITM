@@ -1,0 +1,244 @@
+.employees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 2.5vw;
+}
+
+.employee {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 20px;
+  width: 80%;
+  height: 142vw;
+  border-radius: 20px;
+  position: relative;
+}
+
+.photo_box{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  order: -1;
+}
+
+.photo {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.text_card {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  padding: 5%;
+}
+
+.text_card_top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5vw;
+}
+
+.logo {
+  width: 24vw;
+  margin-right: 1vw;
+}
+
+.job_box {
+  text-align: center;
+  width: 70%;
+}
+
+.job {
+  font-family: 'Gotham Pro Medium';
+  font-size: 3.2vw;
+}
+
+.text_card_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_description {
+  font-size: 3vw;
+  margin-bottom: 5vw;
+  color: #dfdada;
+  padding: 0 1.5vw;
+}
+
+.card_line {
+  width: 95%;
+  height: 2px;
+  background-color: #ffffff98;
+}
+
+.name_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vw;
+}
+
+.name {
+  font-family: 'Gotham Pro Medium';
+  font-size: 4vw;
+  margin-bottom: 4vw;
+}
+
+.btn {
+  color: #ffffff;
+  font-family: 'Gotham Pro Medium';
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: #F04A2A;
+  text-decoration: none;
+  padding: 1.2vw;
+  font-size: 2.8vw;
+  margin-bottom: 1vw;
+}
+
+.layout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 80%;
+  background-color: #ffffff2a;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+}
+
+.card_field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .employee {
+    flex-direction: row;
+    width: auto;
+    height: 50.5vw;
+  }
+
+  .photo_box{
+    height: 100%;
+    width: 50%;
+    order: 0;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .text_card {
+    width: 50%;
+    height: 100%;
+    padding: 3%;
+  }
+
+  .text_card_top {
+    margin-bottom: 3vw;
+  }
+
+  .logo {
+    width: 14vw;
+    margin-right: 1vw;
+  }
+
+  .job {
+    font-size: 1.9vw;
+  }
+
+  .card_description {
+    font-size: 1.65vw;
+    margin-bottom: 3vw;
+    padding: 0 1.8vw;
+  }
+  .card_line {
+    width: 90%;
+  }
+
+  .name_box {
+    margin-top: 3vw;
+  }
+
+  .name {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  .btn {
+    padding: 0.8vw;
+    font-size: 1.4vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .employee {
+    height: 51.2vw;
+    border-radius: 30px;
+  }
+  .layout {
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .employee {
+    width: 53.6vw;
+    height: 30vw;
+    border-radius: calc(15px + 15 * ((100vw - 768px) / (1900 - 768)));
+  }
+
+  .text_card_top {
+    margin-bottom: 2vw;
+  }
+
+  .logo {
+    width: 8vw;
+  }
+
+  .job {
+    font-size: 1.2vw;
+  }
+
+  .card_description {
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+    padding: 0 1vw;
+  }
+
+  .name_box {
+    margin-top: 1vw;
+  }
+
+  .name {
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+  }
+
+  .btn {
+    border-radius: 6px;
+    padding: 0.5vw;
+    font-size: 0.9vw;
+    margin-bottom: 1vw;
+  }
+
+  .layout {
+    border-radius: calc(15px + 15 * ((100vw - 768px) / (1900 - 768)));
+  }
+
+}

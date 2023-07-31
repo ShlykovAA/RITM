@@ -1,4 +1,4 @@
-import { Advantages, CurrentVacancies, Welcome } from '../../sections/vacancies';
+import { Advantages, CurrentVacancies, Employees, Welcome } from '../../sections/vacancies';
 
 export const Vacancies = () => {
   return (
@@ -7,6 +7,7 @@ export const Vacancies = () => {
       <Welcome />
       <Advantages />
       <CurrentVacancies />
+      <Employees />
     </main>
   );
 };  

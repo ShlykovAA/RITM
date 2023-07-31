@@ -19,7 +19,7 @@ export const Welcome = () => {
           інноваційної компанії. Разом ми зможемо досягти великих
           результатів та реалізувати Ваш потенціал!
         </p>
-        <a href="#current_vacancies" className={styles.btn_open_vac} >
+        <a href="#current_vacancies" className={styles.btn_open_vac}>
           <span>ВІДКРИТІ ВАКАНСІЇ</span>
         </a>
       </div>
