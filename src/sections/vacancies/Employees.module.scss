@@ -197,10 +197,22 @@
 }
 
 @media (min-width: 1200px) {
+  .employees {
+    align-items: flex-start;
+  }
+
   .employee {
     width: 53.6vw;
     height: 30vw;
     border-radius: calc(15px + 15 * ((100vw - 768px) / (1900 - 768)));
+  }
+
+  .first_employee {
+    margin-left: 7vw;
+  }
+
+  .second_employee {
+    margin-left: 34vw;
   }
 
   .text_card_top {

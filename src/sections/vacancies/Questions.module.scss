@@ -1,0 +1,22 @@
+.questions {
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+
+.questions_title {
+  font-size: 4.6vw;
+  font-family: 'Gotham Pro Medium';
+  margin: 0 0 4vw 2.5vw;
+}
+
+@media (min-width: 768px) {
+  .questions_title {
+    font-size: 3.4vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .questions_title {
+    font-size: 2vw;
+  }
+}

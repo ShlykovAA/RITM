@@ -1,9 +1,10 @@
 import styles from './Employees.module.scss';
+import cn from 'classnames';
 
 export const Employees = () => {
   return (
     <section className={styles.employees}>
-      <div className={styles.employee}>
+      <div className={cn(styles.employee, styles.first_employee)}>
         <div className={styles.photo_box}>
           <img src="/liana50.png" alt="Liana" className={styles.photo}/>
         </div>
@@ -35,7 +36,7 @@ export const Employees = () => {
         </div>
         <div className={styles.layout}></div>
       </div>
-      <div className={styles.employee}>
+      <div className={cn(styles.employee, styles.second_employee)}>
         <div className={styles.text_card}>
           <div className={styles.text_card_top}>
             <img src="/RITM-logo-1-1300.png" alt="RITM" className={styles.logo} />

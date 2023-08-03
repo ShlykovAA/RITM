@@ -28,6 +28,10 @@
   background-position: 140% 8vh;
 }
 
+.orange {
+  color: #F04A2A;
+}
+
 @media (min-width: 768px) {
   .main {
     margin-top: 12vh;

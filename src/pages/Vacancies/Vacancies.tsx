@@ -1,4 +1,5 @@
 import { Advantages, CurrentVacancies, Employees, Welcome } from '../../sections/vacancies';
+import { Questions } from '../../sections/vacancies/Questions';
 
 export const Vacancies = () => {
   return (
@@ -8,6 +9,7 @@ export const Vacancies = () => {
       <Advantages />
       <CurrentVacancies />
       <Employees />
+      <Questions />
     </main>
   );
 };  
