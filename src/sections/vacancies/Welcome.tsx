@@ -24,22 +24,26 @@ export const Welcome = () => {
         </a>
       </div>
       <div className={styles.welcome_right}>
-        <div className={styles.frame_blc}>
-          {/* <iframe
-            src="https://www.youtube.com/embed/ZbYsPs44MxE"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe> */}
-          <iframe
-            src="https://www.youtube.com/embed/rprf7LEraU4"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+        <img src="/laptop-black.png" alt="Laptop" className={styles.laptop} />
+        <div className={styles.frame_laptop}>
+          <div className={styles.frame_blc}>
+            {/* <iframe
+              src="https://www.youtube.com/embed/ZbYsPs44MxE"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe> */}
+            <iframe
+              src="https://www.youtube.com/embed/rprf7LEraU4"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
+        
       </div>
     </section>
   );
