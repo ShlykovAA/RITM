@@ -20,11 +20,10 @@
 
 .emp_bg_orange {
   position: absolute;
-  left: 10%;
-  top: 15%;
-  width: 70vw;
-  max-width: 1200px;
-  transform: rotate(230deg);
+  left: -40%;
+  top: 30%;
+  width: 140vw;
+  transform: rotate(90deg);
   z-index: -2;
 }
 
@@ -195,6 +194,13 @@
     padding: 0.8vw;
     font-size: 1.4vw;
   }
+
+  .emp_bg_orange {
+    left: -10%;
+    top: 0%;
+    width: 95vw;
+    transform: rotate(60deg);
+  }
 }
 
 @media (min-width: 900px) {
@@ -264,4 +270,10 @@
     border-radius: calc(15px + 15 * ((100vw - 768px) / (1900 - 768)));
   }
 
+  .emp_bg_orange {
+    left: 0;
+    top: -12%;
+    width: 85vw;
+    transform: rotate(60deg);
+  }
 }
