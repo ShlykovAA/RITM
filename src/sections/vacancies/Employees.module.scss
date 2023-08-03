@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   padding: 20px 2.5vw;
+  position: relative;
 }
 
 .employee {
@@ -15,6 +16,16 @@
   height: 142vw;
   border-radius: 20px;
   position: relative;
+}
+
+.emp_bg_orange {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 70vw;
+  max-width: 1200px;
+  transform: rotate(230deg);
+  z-index: -2;
 }
 
 .photo_box{

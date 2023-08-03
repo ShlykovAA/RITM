@@ -54,6 +54,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.arrow_7 {
+  display: none;
+  z-index: -1;
+}
+
+.arrow_8 {
+  display: none;
+  z-index: -1;
 }
 
 .arrow_4 {
@@ -92,6 +103,22 @@
     right: -50px;
     top: 20%;
   }
+
+  .arrow_7 {
+    display: inline;
+    position: absolute;
+    height: 120%;
+    left: -50px;
+    top: 40%;
+  }
+
+  .arrow_8 {
+    display: inline;
+    position: absolute;
+    height: 120%;
+    right: -50px;
+    top: -65%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -107,7 +134,6 @@
 
   .advantages_div_center {
     order: 1;
-    position: relative;
   }
 
   .arrow_4 {
@@ -128,6 +154,13 @@
     transform: rotate(90deg);
   }
 
+  .arrow_7 {
+    display: none;
+  }
+
+  .arrow_8 {
+    display: none;
+  }
 }
 
 @media (min-width: 1011px) {
