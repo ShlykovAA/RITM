@@ -35,8 +35,7 @@
 } 
 
 .line {
-  // margin-top: 10px;
-  width: 70vw;
+  width: 100%;
   height: 2px;
   background-color: #F04A2A;
 }
@@ -75,5 +74,9 @@
   
   .point_box p {
     font-size: 1.8vw;
-  } 
+  }
+
+  .line {
+    width: 80%;
+  }
 }

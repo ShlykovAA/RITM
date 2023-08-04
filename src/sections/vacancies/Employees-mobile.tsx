@@ -15,7 +15,6 @@ export const EmployeesMobile = () => {
   };
   return (
     <section className={styles.employees}>
-      <img src="/fon-900-2.png" alt="background_orange" className={styles.emp_bg_orange}/>
       <div className={cn(styles.employee, styles.first_employee)}>
         <div className={styles.absolute_box}>
           <div className={cn(styles.photo_box, {[styles["photo_box_deactivated"]]: cardSide.first})}>

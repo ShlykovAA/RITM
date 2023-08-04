@@ -5,6 +5,11 @@
   width: 100%;
   padding: 20px 2.5vw;
   position: relative;
+  z-index: 0;
+  background-image: url("/fon-900-2.png");
+  background-repeat: no-repeat;
+  background-size: 200vw;
+  background-position: 5vw 10vw;
 }
 
 .employee {
@@ -16,15 +21,6 @@
   height: 86vw;
   border-radius: 20px;
   position: relative;
-}
-
-.emp_bg_orange {
-  position: absolute;
-  left: -40%;
-  top: 30%;
-  width: 140vw;
-  transform: rotate(90deg);
-  z-index: -4;
 }
 
 .absolute_box {
