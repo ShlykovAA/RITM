@@ -1,0 +1,180 @@
+.employees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 2.5vw;
+  position: relative;
+}
+
+.employee {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 20px;
+  width: 80%;
+  height: 86vw;
+  border-radius: 20px;
+  position: relative;
+}
+
+.emp_bg_orange {
+  position: absolute;
+  left: -40%;
+  top: 30%;
+  width: 140vw;
+  transform: rotate(90deg);
+  z-index: -4;
+}
+
+.absolute_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.photo_box_top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  cursor: pointer;
+}
+
+.turn_card {
+  width: 60%;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.photo_box{
+  position: relative;
+  padding: 3vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  order: -1;
+  transition: 1s;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.photo_box_deactivated {
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+.photo {
+  width: 100%;
+}
+
+.text_card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  transition: 1s;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+.text_card_active {
+  z-index: 1;
+  transform: rotateY(360deg);
+}
+
+.text_card_top {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.job {
+  width: 40%;
+  font-family: 'Gotham Pro Medium';
+  font-size: 2.8vw;
+  text-align: center;
+}
+
+.text_card_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_description {
+  font-size: 3vw;
+  margin-bottom: 5vw;
+  color: #dfdada;
+  padding: 0 1.5vw;
+}
+
+.card_line {
+  width: 95%;
+  height: 2px;
+  background-color: #ffffff98;
+}
+
+.name_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vw;
+}
+
+.name {
+  font-family: 'Gotham Pro Medium';
+  font-size: 4vw;
+  margin-bottom: 4vw;
+}
+
+.btn {
+  color: #ffffff;
+  font-family: 'Gotham Pro Medium';
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: #F04A2A;
+  text-decoration: none;
+  padding: 1.2vw;
+  font-size: 2.8vw;
+  margin-bottom: 1vw;
+}
+
+.layout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  opacity: 80%;
+  background-color: #ffffff2a;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+}
+
+.card_field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  z-index: -1;
+}
+
+.card_field_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  z-index: -1;
+  transform: rotateY(180deg);
+}
