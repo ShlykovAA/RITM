@@ -4,12 +4,12 @@ import styles from './Current-vacancies.module.scss';
 
 export const CurrentVacancies = () => {
   return (
-    <section className={styles.current_vacancies}>
+    <section className={styles.current_vacancies} id='current_vacancies'>
       <div className={styles.current_title}>
-        <h1 id='current_vacancies'>АКТУАЛЬНІ <span className="orange">ВАКАНСІЇ</span>:</h1>
+        <h1>АКТУАЛЬНІ <span className="orange">ВАКАНСІЇ</span>:</h1>
       </div>
       <div className={styles.vacancy_container}>
-        { currentVacanciesTextData.map((item)=>(<OpenVacancy data={item} />)) }
+        { currentVacanciesTextData.map((item, index)=>(<OpenVacancy data={item} key={index} />)) }
       </div>
     </section>
   );

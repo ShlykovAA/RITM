@@ -1,5 +1,6 @@
-import styles from './Welcome.module.scss';
+import { Link as ScrollLink } from 'react-scroll';
 import { useMatchMedia } from '../../hooks';
+import styles from './Welcome.module.scss';
 
 export const Welcome = () => {
   const { isMobile }:any = useMatchMedia();
@@ -19,9 +20,9 @@ export const Welcome = () => {
           інноваційної компанії. Разом ми зможемо досягти великих
           результатів та реалізувати Ваш потенціал!
         </p>
-        <a href="#current_vacancies" className={styles.btn_open_vac}>
+        <ScrollLink to="current_vacancies" spy={true} smooth={true} offset={-100} duration={500} className={styles.btn_open_vac}>
           <span>ВІДКРИТІ ВАКАНСІЇ</span>
-        </a>
+        </ScrollLink>
       </div>
       <div className={styles.welcome_right}>
         <img src="/laptop-black.png" alt="Laptop" className={styles.laptop} />
@@ -43,7 +44,6 @@ export const Welcome = () => {
             ></iframe>
           </div>
         </div>
-        
       </div>
     </section>
   );

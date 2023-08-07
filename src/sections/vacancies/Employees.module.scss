@@ -20,12 +20,11 @@
 }
 
 .photo_box{
-  height: 40%;
-  width: 100%;
+  height: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  order: -1;
 }
 
 .photo {
@@ -141,18 +140,6 @@
     flex-direction: row;
     width: auto;
     height: 50.5vw;
-  }
-
-  .photo_box{
-    height: 100%;
-    width: 50%;
-    order: 0;
-    position: static;
-  }
-
-  .photo {
-    width: 100%;
-    height: auto;
   }
 
   .text_card {
