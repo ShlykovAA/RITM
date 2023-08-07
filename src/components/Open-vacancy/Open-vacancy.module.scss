@@ -9,7 +9,7 @@
 }
 
 .vacancy_phone {
-  height: 12vw;
+  height: 9vw;
 }
 
 .phone_box h2{
@@ -25,9 +25,12 @@
   margin-bottom: 10px;
 }
 
+.a_tell {
+  height: 100%;
+}
+
 .vacancy_point {
-  // height: 20px;
-  height: 6vw;
+  height: 4.6vw;
 }
 
 .point_box p {
@@ -43,7 +46,7 @@
 @media (min-width: 768px) {
 
   .vacancy_phone {
-    height: 8vw;
+    height: 6vw;
   }
 
   .phone_box h2{
@@ -51,7 +54,7 @@
     margin-bottom: 10px;
   }
   .vacancy_point {
-    height: 4vw;
+    height: 3.2vw;
   }
   
   .point_box p {
@@ -61,7 +64,7 @@
 
 @media (min-width: 1200px) {
   .vacancy_phone {
-    height: 50px;
+    height: 3.6vw;
   }
 
   .phone_box h2{
@@ -69,7 +72,7 @@
     margin-bottom: 10px;
   }
   .vacancy_point {
-    height: 30px;
+    height: 2.2vw;
   }
   
   .point_box p {
