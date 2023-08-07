@@ -19,7 +19,7 @@ export const EmployeesMobile = () => {
         <div className={styles.absolute_box}>
           <div className={cn(styles.photo_box, {[styles["photo_box_deactivated"]]: cardSide.first})}>
             <div className={styles.photo_box_top} onClick={onTurnFirstCard}>
-              <p className={styles.turn_card}>Опис</p>
+              <p className={styles.turn_card}>Звернення</p>
               <p className={styles.job}>HR - МЕНЕДЖЕР</p>
             </div>
             <img src="/liana50.png" alt="Liana" className={styles.photo}/>
@@ -58,7 +58,7 @@ export const EmployeesMobile = () => {
         <div className={styles.absolute_box}>
           <div className={cn(styles.photo_box, {[styles["photo_box_deactivated"]]: cardSide.second})}>
             <div className={styles.photo_box_top} onClick={onTurnSecondCard}>
-              <p className={styles.turn_card}>Опис</p>
+              <p className={styles.turn_card}>Звернення</p>
               <p className={styles.job}>РЕКРУТЕР</p>
             </div>
             <img src="/liliya50.png" alt="Liliya" className={styles.photo} />
