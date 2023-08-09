@@ -1,5 +1,5 @@
-import { AdvantagesCard } from '../../components/Advantages-card';
-import { advantagesTextData } from '../../consts/advantages-text';
+// import { AdvantagesCard } from '../../components/Advantages-card';
+// import { advantagesTextData } from '../../consts/advantages-text';
 import styles from './Advantages.module.scss';
 
 export const Advantages = () => {
