@@ -114,12 +114,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 71%;
+  width: 68%;
   height: 100%;
   position:absolute;
   z-index: 0;
   top: -9.9%;
-  left: 13.9%;
+  left: 15.7%;
 }
 
 .laptop {
@@ -177,10 +177,6 @@
     background-color: black;
   }
 
-  .frame_laptop {
-    width: 72%;
-    left: 13.4%;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -209,7 +205,7 @@
   }
 
   .frame_laptop {
-    top: -7%;
+    top: -5.5%;
   }
 
 }
@@ -218,7 +214,6 @@
   .frame_laptop {
     top: -8%;
   }
-
 }
 
 @media (min-width: 1700px) {
@@ -252,5 +247,4 @@
     left: 0.1vw;
     border-radius: 0.5vw;
   }
-
 }

@@ -19,13 +19,13 @@
   position: absolute;
   z-index: -2;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   top: 0;
   left: 0;
-  background-image: url('/fon-900-2.png');
-  background-size: 70%;
+  background-image: url('/fon-top-675.png');
+  background-size: 120vw;
   background-repeat: no-repeat;
-  background-position: 140% 8vh;
+  background-position: 15vw 80vw;
 }
 
 .orange {
@@ -36,11 +36,16 @@
   .main {
     margin-top: 12vh;
   }
+
+  .bg_orange_01 {
+    background-size: 120%;
+    background-position: -50% 34vh;
+  }
 }
 
 @media (min-width: 1200px) {
   .bg_orange_01 {
-    background-size: 60vw;
-    background-position: 120% -10vw;
+    background-size: 69vw;
+    background-position: 170% -19vw;
   }
 }

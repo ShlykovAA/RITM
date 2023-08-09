@@ -25,7 +25,7 @@ export const Welcome = () => {
         </ScrollLink>
       </div>
       <div className={styles.welcome_right}>
-        <img src="/laptop2.png" alt="Laptop" className={styles.laptop} />
+        <img src="/laptop3.png" alt="Laptop" className={styles.laptop} />
         <div className={styles.frame_laptop}>
           <div className={styles.frame_blc}>
             {/* <iframe
