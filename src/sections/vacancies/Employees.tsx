@@ -4,6 +4,7 @@ import cn from 'classnames';
 export const Employees = () => {
   return (
     <section className={styles.employees}>
+      <img src="/fon-900-2.png" alt="background_orange" className={styles.adv_bg_orange}/>
       <div className={cn(styles.employee, styles.first_employee)}>
         <div className={styles.photo_box}>
           <img src="/liana50.png" alt="Liana" className={styles.photo}/>

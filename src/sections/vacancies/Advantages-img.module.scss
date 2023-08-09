@@ -1,0 +1,59 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 2.5vw 40px 2.5vw;
+}
+
+.advantages_title {
+  font-size: 4.8vw;
+  margin-left: 0.5vw;
+  font-family: 'Gotham Pro Medium';
+}
+
+.advantages_container {
+  width: 100%;
+  position: relative;
+}
+
+.aver_img {
+  width: 100%;
+}
+
+.adv_bg_orange {
+  position: absolute;
+  left: -60%;
+  top: 30%;
+  width: 120vw;
+  height: 80vw;
+  transform: rotate(120deg);
+  z-index: -2;
+}
+
+@media (min-width: 768px) {
+  .advantages_title {
+    font-size: 3.4vw;
+  }
+
+  .adv_bg_orange {
+    top: -5vw;
+    left: -50%;
+    width: 90vw;
+    height: 70vw;
+    transform: rotate(140deg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages_title {
+    font-size: 2vw;
+  }
+
+  .adv_bg_orange {
+    top: -30%;
+    left: -70%;
+    width: 90vw;
+    height: 70vw;
+    transform: rotate(180deg);
+  }
+}
