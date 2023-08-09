@@ -19,18 +19,18 @@ export const EmployeesMobile = () => {
         <div className={styles.absolute_box}>
           <div className={cn(styles.photo_box, {[styles["photo_box_deactivated"]]: cardSide.first})}>
             <div className={styles.photo_box_top} onClick={onTurnFirstCard}>
-              <p className={styles.turn_card}>Звернення</p>
+              <p className={styles.turn_card}>ЗВЕРНЕННЯ</p>
               <p className={styles.job}>HR - МЕНЕДЖЕР</p>
             </div>
             <img src="/liana50.png" alt="Liana" className={styles.photo}/>
-            <img src="/employ-card50.png" alt="field" className={styles.card_field_back}/>
+            <img src="/employ-card-mobile.png" alt="field" className={styles.card_field_back}/>
           </div>
         </div>
         <div className={styles.absolute_box}>
           <div className={cn(styles.text_card, {[styles["text_card_active"]]: cardSide.first})} >
             <div className={styles.text_card_top} onClick={onTurnFirstCard}>
               <p className={styles.job}>HR - МЕНЕДЖЕР</p>
-              <p className={styles.turn_card}>Фото</p>
+              <p className={styles.turn_card}>ФОТО</p>
             </div>
             <div className={styles.text_card_bottom}>
               <div>
@@ -49,7 +49,7 @@ export const EmployeesMobile = () => {
                 </a>
               </div>
             </div>
-            <img src="/employ-card50.png" alt="field" className={styles.card_field}/>
+            <img src="/employ-card-mobile.png" alt="field" className={styles.card_field}/>
           </div>
         </div>
         <div className={styles.layout}></div>
@@ -58,18 +58,18 @@ export const EmployeesMobile = () => {
         <div className={styles.absolute_box}>
           <div className={cn(styles.photo_box, {[styles["photo_box_deactivated"]]: cardSide.second})}>
             <div className={styles.photo_box_top} onClick={onTurnSecondCard}>
-              <p className={styles.turn_card}>Звернення</p>
+              <p className={styles.turn_card}>ЗВЕРНЕННЯ</p>
               <p className={styles.job}>РЕКРУТЕР</p>
             </div>
             <img src="/liliya50.png" alt="Liliya" className={styles.photo} />
-            <img src="/employ-card50.png" alt="field" className={styles.card_field_back}/>
+            <img src="/employ-card-mobile.png" alt="field" className={styles.card_field_back}/>
           </div>
         </div>
         <div className={styles.absolute_box}>
           <div className={cn(styles.text_card, {[styles["text_card_active"]]: cardSide.second})}>
             <div className={styles.text_card_top} onClick={onTurnSecondCard}>
               <p className={styles.job}>РЕКРУТЕР</p>
-              <p className={styles.turn_card}>Фото</p>
+              <p className={styles.turn_card}>ФОТО</p>
             </div>
             <div className={styles.text_card_bottom}>
               <div>
@@ -86,7 +86,7 @@ export const EmployeesMobile = () => {
                 <a className={styles.btn} href="tel:+380960553866">ЗАТЕЛЕФОНУВАТИ</a>
               </div>
             </div>
-            <img src="/employ-card50.png" alt="field" className={styles.card_field}/>
+            <img src="/employ-card-mobile.png" alt="field" className={styles.card_field}/>
           </div>
         </div>
         <div className={styles.layout}></div>

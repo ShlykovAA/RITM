@@ -132,8 +132,8 @@
   .employees {
     background-image: url("/fon-900-2.png");
     background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: 30vw 15vw;
+    background-size: 100%;
+    background-position: 40vw 15vw;
   }
 
   .employee {
@@ -211,7 +211,7 @@
   .employees {
     align-items: flex-start;
     background-size: 80%;
-    background-position: 35vw 0%;
+    background-position: 65vw 40%;
   }
 
   .employee {
@@ -266,10 +266,10 @@
     border-radius: calc(15px + 15 * ((100vw - 768px) / (1900 - 768)));
   }
 
-  .emp_bg_orange {
-    left: 0;
-    top: -12%;
-    width: 85vw;
-    transform: rotate(60deg);
-  }
+  // .emp_bg_orange {
+  //   left: 0;
+  //   top: -12%;
+  //   width: 85vw;
+  //   transform: rotate(60deg);
+  // }
 }
