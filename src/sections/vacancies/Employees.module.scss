@@ -5,7 +5,7 @@
   width: 100%;
   padding: 20px 2.5vw;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .employee {
@@ -95,6 +95,20 @@
   margin-bottom: 4vw;
 }
 
+.contacts_btn_box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contacts_a {
+  width: 14%;
+}
+
+.contacts_img {
+  width: 100%;
+}
+
 .btn {
   color: #ffffff;
   font-family: 'Gotham Pro Medium';
@@ -111,7 +125,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -2;
+  z-index: -3;
   opacity: 80%;
   background-color: #ffffff2a;
   border-radius: 20px;
@@ -125,7 +139,7 @@
   left: 0;
   height: auto;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .adv_bg_orange {

@@ -28,9 +28,20 @@ export const Employees = () => {
             <div className={styles.card_line}></div>
             <div className={styles.name_box}>
               <p className={styles.name}>ІВАЩЕНКО ЛІАНА</p>
-              <a className={styles.btn} href="tel:+380977596100">
+              {/* <a className={styles.btn} href="tel:+380977596100">
                 <span>ЗАТЕЛЕФОНУВАТИ</span>
-              </a>
+              </a> */}
+              <div className={styles.contacts_btn_box}>
+                <a href="tel:+380977596100" className={styles.contacts_a}>
+                  <img src="/phone2.png" alt="phone" className={styles.contacts_img} />
+                  </a>
+                <a href="viber://chat?number=%2B380990530908" className={styles.contacts_a}>
+                  <img src="/viber.png" alt="viber" className={styles.contacts_img} />
+                </a>
+                <a href="https://t.me/liana_ritm" className={styles.contacts_a}>
+                  <img src="/telegram-240.png" alt="telegram" className={styles.contacts_img} />
+                </a>
+              </div>  
             </div>
           </div>
           <img src="/employ-card50.png" alt="field" className={styles.card_field}/>
