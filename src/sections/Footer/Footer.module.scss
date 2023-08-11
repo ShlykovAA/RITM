@@ -156,6 +156,18 @@
     width: 40%;
   }
 
+  .p_footer_bottom {
+    font-size: 1.8vw;
+  }
+
+  .footer_contacts {
+    width: 40%;
+  }
+
+  .footer_contacts a {
+    width: 16%;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -215,7 +227,6 @@
   }
 
   .footer_contacts {
-    justify-content: space-between;
     width: 20%;
     order: 0;
   }
