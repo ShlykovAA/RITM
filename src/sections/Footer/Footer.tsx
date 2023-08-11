@@ -1,9 +1,75 @@
+import { NavLink } from 'react-router-dom';
+import { FOOTER_CARDS_DATA } from '../../consts/footer-cards';
 import styles from './Footer.module.scss';
+import { FooterCard } from '../../components/Footer-card';
 
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <h3>2023</h3>
+      <div className={styles.footer_top}>
+      <NavLink to="/" className={styles.logo_link}>
+        <img src="/RITM-logo-1-1489.png" alt="Logo" />
+      </NavLink>
+      <h3 className={styles.h3_top}>
+        develop developers
+      </h3>
+      </div>
+      <div className={styles.footer_center}>
+        <div className={styles.center_left}>
+          <div className={styles.left_container}>
+            <h3 className={styles.h3_center}>Про RITM</h3>
+            <a href="">
+              <p>Вакансії</p>
+            </a> 
+            <a href="">
+              <p>Команда</p>
+            </a>
+          </div>
+          <div className={styles.left_container}>
+            <h3 className={styles.h3_center}>Контакти</h3>
+            <a href="">
+              <p>+38 (098) 35 17 691</p>
+            </a>
+            <a href="">
+              <p>contact@ritm.group</p>
+            </a>
+          </div>
+        </div>
+        <div className={styles.center_right}>
+          <div className={styles.right_title}>
+            <h3 className={styles.h3_center}>Інші проєкти</h3>
+            <div className={styles.logo_mini_box}>
+              <span>від</span>
+              <img src="/RITM-logo-mini.png" alt="Logo" />
+            </div>
+          </div>
+          <div className={styles.right_content_box}>
+            { FOOTER_CARDS_DATA.map((item, index) => <FooterCard data={item} key={index} /> )}
+          </div>
+        </div>
+      </div>
+      <div className={styles.footer_bottom}>
+        <p className={styles.p_footer_bottom}>
+          2006-2023 RITM. Всі права захищено
+        </p>
+        <div className={styles.footer_contacts}>
+          <a href="">
+            <img src="/tiktok.png" alt="TikTok" className={styles.footer_contacts_img} />
+          </a>
+          <a href="">
+            <img src="/telegram-240.png" alt="Telegram" className={styles.footer_contacts_img} />
+          </a>
+          <a href="">
+            <img src="/facebook.png" alt="Facebook" className={styles.footer_contacts_img} />
+          </a>
+          <a href="">
+            <img src="/instagram-240.png" alt="Instagram" className={styles.footer_contacts_img} />
+          </a>
+        </div>
+        <p className={styles.p_footer_bottom}>
+          Умови користування та Політика конфіденційності
+        </p>
+      </div>
     </footer>
   );
 };
