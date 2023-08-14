@@ -15,16 +15,13 @@
 .cards_title {
   display: flex;
   align-items: center;
+  height: 8vw;
   width: 100%;
   gap: 1vw;
 }
 
-.small_img {
-  width: 25%;
-}
-
-.big_img {
-  width: 18%;
+.cards_logo {
+  height: 90%;
 }
 
 .cards_title p {
@@ -43,15 +40,8 @@
   }
 
   .cards_title {
+    height: 5vw;
     gap: 0.6vw;
-  }
-
-  .small_img {
-    width: 25%;
-  }
-
-  .big_img {
-    width: 19%;
   }
 
   .cards_title p {
@@ -71,11 +61,8 @@
   }
 
   .cards_title {
+    height: 2vw;
     gap: 0.4vw;
-  }
-
-  .small_img {
-    width: 20%;
   }
 
   .cards_title p {
