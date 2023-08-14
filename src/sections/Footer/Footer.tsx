@@ -4,6 +4,9 @@ import styles from './Footer.module.scss';
 import { FooterCard } from '../../components/Footer-card';
 
 export const Footer = () => {
+  const onVacancies = () => {
+    
+  }
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_top}>
