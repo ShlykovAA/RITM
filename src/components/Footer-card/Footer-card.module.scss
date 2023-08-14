@@ -1,14 +1,6 @@
 .a_container {
   width: 45%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  color: #ffffff98;
   margin: 4vw 0;
-}
-
-.a_container:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
   color: #ffffff;
 }
 
@@ -58,6 +50,15 @@
   .a_container {
     width: 26%;
     margin: 1vw 0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    color: #ffffff98;
+  }
+
+  .a_container:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    color: #ffffff;
   }
 
   .cards_title {
