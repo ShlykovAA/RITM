@@ -31,11 +31,16 @@
 }
 
 .lang {
-  width: 30%;
+  display: flex;
+  width: 100%;
+}
+
+.lang a {
+  width: 25%;
 }
 
 .lang_img {
-  width: 50%;
+  width: 60%;
 }
 
 .nav {
@@ -87,15 +92,20 @@
     left: 47%; bottom: -10px;
     transition-duration: 0.2s;
   }
+
+  .lang_img {
+    width: 50%;
+  }
+
 }
 
 @media (min-width: 768px) {
-  .lang {
-    width: 20%;
-  }
-
   .nav {
     top: 12vh;
     height: 88vh;
+  }
+
+  .lang_img {
+    width: 40%;
   }
 }

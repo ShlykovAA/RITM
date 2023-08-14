@@ -3,8 +3,6 @@ import { useMatchMedia } from '../../hooks';
 import styles from './Header.module.scss';
 import cn from 'classnames';
 import imgLang from '/lang.png';
-import telegram from '/telegram-240.png';
-import insta from '/instagram-240.png';
 import { NavDesktop } from '../../components/Nav-desktop';
 import { NavLink } from 'react-router-dom';
 import { useAppDispatch } from '../../store/hooks';
@@ -25,9 +23,19 @@ export const Header = () => {
       { isMobile || isTablet ? <NavMobile /> : <NavDesktop />}
       <div className={styles.icon_container}>
         { isDesktop ? (
-          <div className={styles.lang}>
-            <img src={telegram} alt="telegram" className={styles.lang_img}/>
-            <img src={insta} alt="instagram" className={styles.lang_img}/>
+          <div className={styles.contacts_messenger}>
+            <a href="https://www.tiktok.com/@ritm.ukraine">
+              <img src="/tiktok.png" alt="TikTok" className={styles.contacts_img} />
+            </a>
+            <a href="https://t.me/Ritm2Job">
+              <img src="/telegram-240.png" alt="Telegram" className={styles.contacts_img} />
+            </a>
+            <a href="https://www.facebook.com/ritm2.ukraine">
+              <img src="/facebook.png" alt="Facebook" className={styles.contacts_img} />
+            </a>
+            <a href="https://instagram.com/ritm_ukraine">
+              <img src="/instagram-240.png" alt="Instagram" className={styles.contacts_img} />
+            </a>
           </div>
         ) : null}
         <div className={styles.lang}>

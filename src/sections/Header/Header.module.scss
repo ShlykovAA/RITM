@@ -25,9 +25,24 @@
 .icon_container {
   display: flex;
   justify-content: space-between;
-  width: 15%;
+  // width: 15%;
   height: 100%;
   align-items: center;
+  gap: 1vw;
+}
+
+.contacts_messenger {
+  display: flex;
+  align-items: center;
+  height: 40%;
+}
+
+.contacts_messenger a{
+  height: 90%;
+}
+
+.contacts_img {
+  height: 100%;
 }
 
 .lang {
@@ -35,8 +50,7 @@
   align-items: center;
   margin: 0;
   height: 100%;
-  width: 50%;
-  cursor: pointer;
+  // width: 50%;
 }
 
 .lang_img {
@@ -44,8 +58,9 @@
 }
 
 .span_lang {
-  font-size: 90%;
+  font-size: 3vw;
   margin: 0 4px;
+  cursor: pointer;
 }
 
 .span_lang:hover {
@@ -54,7 +69,7 @@
 }
 
 .span_slash {
-  font-size: 90%;
+  font-size: 3vw;
 }
 
 .burger {
@@ -103,6 +118,25 @@
 transition-duration: .1s;
 }
 
+@media (min-width: 500px) {
+  .lang {
+    height: 40%;
+  }
+  
+  .lang_img {
+    height: 90%;
+    width: auto;
+  }
+  
+  .span_lang {
+    font-size: 2vw;
+  }
+
+  .span_slash {
+    font-size: 2vw;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     height: 12vh;
@@ -120,24 +154,22 @@ transition-duration: .1s;
     width: auto;
   }
 
-  .lang {
-    margin: 0;
-    height: 40%;
-    width: auto;
-  }
-  
-  .lang_img {
-    height: 90%;
-    width: auto;
-  }
-  
   .span_lang {
-    font-size: 90%;
-    margin: 0 4px;
+    font-size: 1.5vw;
   }
 
   .span_slash {
-    font-size: 90%;
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .span_lang {
+    font-size: 0.8vw;
+  }
+
+  .span_slash {
+    font-size: 0.8vw;
   }
 }
 

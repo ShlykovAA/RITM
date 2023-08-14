@@ -4,8 +4,6 @@ import { projectLinksMap, teamLinksMap, contactsLinksMap } from '../../consts/li
 import cn from 'classnames';
 import styles from './Nav-mobile.module.scss';
 import { SubMenu } from '../Submenu';
-import telegram from '/telegram-240.png';
-import insta from '/instagram-240.png';
 import { useAppDispatch } from '../../store/hooks';
 import { changeBurgerStatus, useBurgerStatusSelector } from '../../store/slice/burgerStatus';
 
@@ -72,9 +70,19 @@ export const NavMobile: React.FC = () => {
       <div className={styles.line}></div>
       
       <div className={styles.lang}>
-          <img src={telegram} alt="telegram" className={styles.lang_img}/>
-          <img src={insta} alt="instagram" className={styles.lang_img}/>
-        </div>
+        <a href="https://www.tiktok.com/@ritm.ukraine">
+          <img src="/tiktok.png" alt="TikTok" className={styles.lang_img} />
+        </a>
+        <a href="https://t.me/Ritm2Job">
+          <img src="/telegram-240.png" alt="Telegram" className={styles.lang_img} />
+        </a>
+        <a href="https://www.facebook.com/ritm2.ukraine">
+          <img src="/facebook.png" alt="Facebook" className={styles.lang_img} />
+        </a>
+        <a href="https://instagram.com/ritm_ukraine">
+          <img src="/instagram-240.png" alt="Instagram" className={styles.lang_img} />
+        </a>
+      </div>
     </nav>
   );
 };
