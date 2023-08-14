@@ -53,20 +53,15 @@
   gap: 2vw;
 }
 
-.logo_mini_box {
-  display: flex;
-  align-items: center;
-  width: 40%;
-}
-
-.logo_mini_box span {
+.right_title span {
+  margin-top: 0.15vw;
   font-size: 2.3vw;
   color: #ffffff98;
 }
 
-.logo_mini_box img{
-  margin-top: 0.6vw;
-  width: 62%;
+.right_title img{
+  margin-top: 0.2vw;
+  height: 4vw;
 }
 
 .right_content_box {
@@ -143,17 +138,16 @@
     margin-top: 2vw;
   }
 
-  .logo_mini_box {
-    width: 35%;
+  .right_title {
+    gap: 1vw;
   }
 
-  .logo_mini_box span {
+  .right_title span {
     font-size: 1.5vw;
   }
 
-  .logo_mini_box img{
-    margin-top: 0.3vw;
-    width: 40%;
+  .right_title img{
+    height: 2.5vw;
   }
 
   .p_footer_bottom {
@@ -203,16 +197,16 @@
     width: 50%;
   }
 
-  .logo_mini_box {
-    width: 20%;
+  .right_title {
+    gap: 0.5vw;
   }
 
-  .logo_mini_box span {
+  .right_title span {
     font-size: 0.6vw;
   }
 
-  .logo_mini_box img{
-    width: 50%;
+  .right_title img{
+    height: 1.3vw;
   }
 
 

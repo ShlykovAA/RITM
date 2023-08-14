@@ -38,10 +38,8 @@ export const Footer = () => {
         <div className={styles.center_right}>
           <div className={styles.right_title}>
             <h3 className={styles.h3_center}>Інші проєкти</h3>
-            <div className={styles.logo_mini_box}>
-              <span>від</span>
-              <img src="/RITM-logo-mini.png" alt="Logo" />
-            </div>
+            <span>від</span>
+            <img src="/RITM-logo-mini.png" alt="Logo" />
           </div>
           <div className={styles.right_content_box}>
             { FOOTER_CARDS_DATA.map((item, index) => <FooterCard data={item} key={index} /> )}
