@@ -3,16 +3,15 @@
   height: 250px;
   padding: 20px;
   position: relative;
-  border-radius: 20px;
   margin: 10px;
 }
 
 .smaller {
-  height: 220px;
+  height: 228px;
 }
 
 .larger {
-  height: 280px;
+  height: 274px;
 }
 
 .adv_layout {
@@ -29,14 +28,10 @@
 }
 
 .card_top {
-  height: 25%;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.card_top_fifth{
-  height: 22%;
 }
 
 .adv_card_line {
@@ -47,11 +42,11 @@
 }
 
 .adv_img {
-  width: 50px;
+  width: 20%;
 }
 
 .smaller_img {
-  width: 40px;
+  width: 18%;
 }
 
 .adv_cards h3 {
@@ -79,35 +74,33 @@
 
 @media (min-width: 1200px) {
   .adv_cards {
-    margin: calc(20px + 20 * ((100vw - 1200px) / (1800 - 1200)));
-    width: calc(290px + 80 * ((100vw - 1200px) / (1800 - 1200)));
-    height: calc(250px + 60 * ((100vw - 1200px) / (1800 - 1200)));
-    padding: calc(16px + 6 * ((100vw - 1200px) / (1800 - 1200)));
-  }
-
-  .adv_img {
-    width: calc(40px + 15 * ((100vw - 1200px) / (1800 - 1200)));
-  }
-  
-  .adv_cards h3 {
-    font-size: calc(21px + 5 * ((100vw - 1200px) / (1800 - 1200)));
-  }
-  
-  .adv_cards p {
-    font-size: calc(21px + 5 * ((100vw - 1200px) / (1800 - 1200)));
+    margin: calc(20px + 7 * ((100vw - 1200px) / (1800 - 1200)));
+    width: calc(290px + 87 * ((100vw - 1200px) / (1800 - 1200)));
+    height: calc(252px + 75 * ((100vw - 1200px) / (1800 - 1200)));
+    padding: calc(20px + 6 * ((100vw - 1200px) / (1800 - 1200)));
   }
 
   .smaller {
-    width: calc(300px + 80 * ((100vw - 1200px) / (1800 - 1200)));
-    height: calc(220px + 60 * ((100vw - 1200px) / (1800 - 1200)));
-  }
-
-
-  .smaller_img {
-    width: calc(35px + 15 * ((100vw - 1200px) / (1800 - 1200)));
+    height: calc(228px + 68 * ((100vw - 1200px) / (1800 - 1200)));
   }
 
   .larger {
-    height: calc(280px + 60 * ((100vw - 1200px) / (1800 - 1200)));
+    height: calc(276px + 83 * ((100vw - 1200px) / (1800 - 1200)));
+  }
+
+  .adv_layout {
+    border-radius: calc(20px + 6 * ((100vw - 1200px) / (1800 - 1200)));
+  }
+
+  .card_top {
+    height: calc(52px + 15 * ((100vw - 1200px) / (1800 - 1200)));
+  }
+  
+  .adv_cards h3 {
+    font-size: calc(21px + 6 * ((100vw - 1200px) / (1800 - 1200)));
+  }
+  
+  .adv_cards p {
+    font-size: calc(20px + 6 * ((100vw - 1200px) / (1800 - 1200)));
   }
 }

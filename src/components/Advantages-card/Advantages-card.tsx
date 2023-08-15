@@ -12,7 +12,7 @@ export const AdvantagesCard: React.FC<IAdvantagesCard> = ({ data }) => {
       [styles["larger"]]: data[5] === "fifth",
     })}>
       <div className={styles.adv_layout}></div>
-      <div className={cn(styles.card_top, {[styles["card_top_fifth"]]: data[5] === "fifth"})} >
+      <div className={styles.card_top} >
         <div className={styles.adv_card_line}></div>
         <img src={data[3]} alt={data[4]} className={cn(styles.adv_img, {[styles["smaller_img"]]: data[5] === "fourth"})} />
       </div>

@@ -31,6 +31,10 @@
   position: relative;
 }
 
+.card_img {
+  width: 290px;
+}
+
 .advantages_div {
   display: flex;
   flex-direction: column;
@@ -169,6 +173,17 @@
     height: 70vw;
     transform: rotate(140deg);
   }
+
+  .card_img {
+    width: 300px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 970px) {
+  .card_img {
+    width: 310px;
+  }
 }
 
 @media (min-width: 1011px) {
@@ -245,13 +260,17 @@
     transform: rotate(180deg);
   }
 
+  .card_img {
+    width: 26vw;
+  }
+
   .arrow_1 {
     left: -18%;
     top: 15%;
   }
   
   .arrow_6 {
-    right: -16%;
+    right: -18%;
     top: 15%;
   }
 }

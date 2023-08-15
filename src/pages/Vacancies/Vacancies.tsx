@@ -1,13 +1,13 @@
 import { useMatchMedia } from '../../hooks';
-import { Advantages, AdvantagesDesktop, CurrentVacancies, Employees, EmployeesMobile, Questions, Welcome } from '../../sections/vacancies';
+import { Advantages, CurrentVacancies, Employees, EmployeesMobile, Questions, Welcome } from '../../sections/vacancies';
 
 export const Vacancies = () => {
-  const { isMobile, isDesktop }:any = useMatchMedia();
+  const { isMobile }:any = useMatchMedia();
   return (
     <main className='main'>
       <div className='bg_orange_01'></div>
       <Welcome />
-      {isDesktop ? ( <AdvantagesDesktop /> ) : ( <Advantages /> )}
+      <Advantages />
       <CurrentVacancies />
       { isMobile ? ( <EmployeesMobile /> ) : ( <Employees /> )}
       <Questions />
