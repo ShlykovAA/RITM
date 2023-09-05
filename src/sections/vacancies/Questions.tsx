@@ -6,7 +6,7 @@ export const Questions = () => {
   return (
     <section className={styles.questions}>
       <div className={styles.questions_title}>
-        <h1>НАЙЧАСТІШІ ЗАПИТАННЯ І <span className="orange">ВІДПОВІДІ</span> НА НИХ</h1>
+        <h2>НАЙЧАСТІШІ ЗАПИТАННЯ І <span className="orange">ВІДПОВІДІ</span> НА НИХ</h2>
       </div>
       <div>
         { vacanciesQuestionsData.map((item, index) => {

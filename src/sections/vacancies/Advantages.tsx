@@ -6,7 +6,7 @@ export const Advantages = () => {
   return (
     <section className={styles.advantages}>
       <div className={styles.advantages_title}>
-        <h1>ЧОМУ РОБОТА У НАС<br /> - ЦЕ КРУТО?</h1>
+        <h2>ЧОМУ РОБОТА У НАС<br /> - ЦЕ КРУТО?</h2>
       </div>
       <div className={styles.advantages_container}>
         <img src="/fon-900-2.png" alt="background_orange" className={styles.adv_bg_orange} />

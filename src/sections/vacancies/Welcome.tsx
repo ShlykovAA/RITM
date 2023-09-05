@@ -9,9 +9,9 @@ export const Welcome = () => {
       <div className={styles.welcome_left}>
         <div className={styles.welcome_title}>
           { isMobile ? (
-            <h1 className={styles.welcome_h1}>МРІЄТЕ <span className={styles.orange}>ПОБУДУВАТИ <br /> УСПІШНУ КАР’ЄРУ</span> <br />У СФЕРІ НЕРУХОМОСТІ?</h1>
+            <h2>МРІЄТЕ <span className={styles.orange}>ПОБУДУВАТИ <br /> УСПІШНУ КАР’ЄРУ</span> <br />У СФЕРІ НЕРУХОМОСТІ?</h2>
           ) : (
-            <h1 className={styles.welcome_h1}>МРІЄТЕ <span className={styles.orange}>ПОБУДУВАТИ УСПІШНУ <br/> КАР’ЄРУ </span>У СФЕРІ НЕРУХОМОСТІ?</h1>
+            <h2>МРІЄТЕ <span className={styles.orange}>ПОБУДУВАТИ УСПІШНУ <br/> КАР’ЄРУ </span>У СФЕРІ НЕРУХОМОСТІ?</h2>
           )}
         </div>
         <p className={styles.welcome_p}>

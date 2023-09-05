@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Nav-desktop.module.scss';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { SubMenu } from '../Submenu';
 import { contactsLinksMap, projectLinksMap, teamLinksMap } from '../../consts/links-map';
 
@@ -31,10 +31,10 @@ export const NavDesktop = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.div_for_link} onMouseEnter={onCloseAll}>
-        <NavLink to="/" className={styles.link}>Головна</NavLink>
+        <Link to="/" className={styles.link}>Головна</Link>
       </div>
       <div className={styles.div_for_link} onMouseEnter={onCloseAll}>
-        <NavLink to="/about-us" className={styles.link}>Про нас</NavLink>
+        <Link to="/about-us" className={styles.link}>Про нас</Link>
       </div>
       <div className={styles.div_for_link} onMouseEnter={onProjectMouseEnter}>
         <span className={styles.link}>Компанії та проєкти</span>
@@ -55,7 +55,7 @@ export const NavDesktop = () => {
           ) : null }
       </div>
       <div className={styles.div_for_link} onMouseEnter={onCloseAll}>
-        <NavLink to="/vacancies" className={styles.link}>Вакансії</NavLink>
+        <Link to="/vacancies" className={styles.link}>Вакансії</Link>
       </div>
       <div className={styles.div_for_link} onMouseEnter={onContactsMouseEnter}>
         <span className={styles.link}>Контакти</span>

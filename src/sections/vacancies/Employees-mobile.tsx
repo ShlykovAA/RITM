@@ -15,6 +15,7 @@ export const EmployeesMobile = () => {
   };
   return (
     <section className={styles.employees}>
+      <h2 style={{display: 'none'}}>Картки з контактами HR - менеджера та рекрутера</h2>
       <div className={cn(styles.employee, styles.first_employee)}>
         <div className={styles.absolute_box}>
           <div className={cn(styles.photo_box, {[styles["photo_box_deactivated"]]: cardSide.first})}>

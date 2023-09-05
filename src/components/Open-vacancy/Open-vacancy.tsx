@@ -9,7 +9,7 @@ export const OpenVacancy: React.FC<IOpenVacancy> = ({ data }) => {
     <div className={styles.vacancy_card}>
       <div className={styles.phone_box}>
         <a href="tel:+380977596100" className={styles.a_tell}><img src="/phone.png" alt="phone" className={styles.vacancy_phone}/></a>
-        <h2>{data[0]}</h2>
+        <h3>{data[0]}</h3>
       </div>
       <div className={styles.point_box}>
         <img src="/point.png" alt="point" className={styles.vacancy_point}/>

@@ -4,22 +4,27 @@ import styles from './Header.module.scss';
 import cn from 'classnames';
 import imgLang from '/lang.png';
 import { NavDesktop } from '../../components/Nav-desktop';
-import { NavLink } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useAppDispatch } from '../../store/hooks';
 import { changeBurgerStatus, useBurgerStatusSelector } from '../../store/slice/burgerStatus';
+import { useEffect } from 'react';
 
 export const Header = () => {
   const dispatch = useAppDispatch();
   const burgerIsOpen = useBurgerStatusSelector();
   const { isMobile, isTablet, isDesktop }:any = useMatchMedia();
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const onClick = () => {
     dispatch(changeBurgerStatus(!burgerIsOpen))
   };
   return (
     <header className={styles.header}>
-      <NavLink to="/" className={styles.logo_link}>
+      <Link to="/" className={styles.logo_link}>
         <img src="/RITM-logo-1-1300.png" alt="Ritm logo" className={styles.logo}/>
-      </NavLink>
+      </Link>
       { isMobile || isTablet ? <NavMobile /> : <NavDesktop />}
       <div className={styles.icon_container}>
         { isDesktop ? (

@@ -6,7 +6,7 @@ export const CurrentVacancies = () => {
   return (
     <section className={styles.current_vacancies} id='current_vacancies'>
       <div className={styles.current_title}>
-        <h1>АКТУАЛЬНІ <span className="orange">ВАКАНСІЇ</span>:</h1>
+        <h2>АКТУАЛЬНІ <span className="orange">ВАКАНСІЇ</span>:</h2>
       </div>
       <div className={styles.vacancy_container}>
         { currentVacanciesTextData.map((item, index)=>(<OpenVacancy data={item} key={index} />)) }

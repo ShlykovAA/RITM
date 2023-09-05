@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import { Vacancies } from './pages/Vacancies';
 import { NotFound } from './pages/NotFound';
@@ -7,7 +8,21 @@ import { Layout } from './components/Layout/Layout';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 
+interface ITitles {
+  [key: string] : string;
+}
+
+const titles: ITitles = {
+  '/':'RITM',
+  '/vacancies':'RITM - відкриті вакансії',
+}
+
 function App() {
+  const location = useLocation();
+  useEffect(
+    () => {document.title = titles[location.pathname] === undefined ? 'RITM' : titles[location.pathname]},
+    [location],
+  )
   return (
     <>
       <Provider store={store}>

@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FOOTER_CARDS_DATA } from '../../consts/footer-cards';
 import styles from './Footer.module.scss';
 import { FooterCard } from '../../components/Footer-card';
@@ -7,17 +7,17 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_top}>
-      <NavLink to="/" className={styles.logo_link}>
+      <Link to="/" className={styles.logo_link}>
         <img src="/RITM-logo-1-1489.png" alt="Logo" />
-      </NavLink>
-      <h3 className={styles.h3_top}>
+      </Link>
+      <h2 className={styles.h2_top}>
         develop developers
-      </h3>
+      </h2>
       </div>
       <div className={styles.footer_center}>
         <div className={styles.center_left}>
           <div className={styles.left_container}>
-            <h3 className={styles.h3_center}>Про RITM</h3>
+            <h2 className={styles.h2_center}>Про RITM</h2>
             <a href="/vacancies#current_vacancies">
               <p>Вакансії</p>
             </a>
@@ -26,7 +26,7 @@ export const Footer = () => {
             </a>
           </div>
           <div className={styles.left_container}>
-            <h3 className={styles.h3_center}>Контакти</h3>
+            <h2 className={styles.h2_center}>Контакти</h2>
             <a href="tel:+380983517691">
               <p>+38 (098) 35 17 691</p>
             </a>
@@ -37,7 +37,7 @@ export const Footer = () => {
         </div>
         <div className={styles.center_right}>
           <div className={styles.right_title}>
-            <h3 className={styles.h3_center}>Інші проєкти</h3>
+            <h2 className={styles.h2_center}>Інші проєкти</h2>
             <span>від</span>
             <img src="/RITM-logo-mini.png" alt="Logo" />
           </div>

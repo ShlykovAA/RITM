@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { projectLinksMap, teamLinksMap, contactsLinksMap } from '../../consts/links-map';
 import cn from 'classnames';
 import styles from './Nav-mobile.module.scss';
@@ -36,11 +36,11 @@ export const NavMobile: React.FC = () => {
   return (
     <nav className={cn(styles.nav, {[styles['nav_off']]: !burgerIsOpen})}>
       <div className={styles.div_for_link}>
-        <NavLink to="/" className={styles.link} onClick={onClick}>Головна</NavLink>
+        <Link to="/" className={styles.link} onClick={onClick}>Головна</Link>
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
-        <NavLink to="/about-us" className={styles.link} onClick={onClick}>Про нас</NavLink>
+        <Link to="/about-us" className={styles.link} onClick={onClick}>Про нас</Link>
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
@@ -58,7 +58,7 @@ export const NavMobile: React.FC = () => {
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
-        <NavLink to="/vacancies" className={styles.link} onClick={onClick}>Вакансії</NavLink>
+        <Link to="/vacancies" className={styles.link} onClick={onClick}>Вакансії</Link>
       </div>
         <div className={styles.line}></div>
       <div className={styles.div_for_link}>
