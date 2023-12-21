@@ -28,7 +28,7 @@
 }
 
 :root {
-  font-family: "Gotham Pro";
+  font-family: "Gotham Pro", sans-serif;
   line-height: 1.2;
   background-color: #151A21;
   font-synthesis: none;
@@ -65,7 +65,6 @@ ul li {
  }
 
 body {
-  margin: 0;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
